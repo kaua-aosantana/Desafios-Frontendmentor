@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilo.css">
   <title>Frontend Mentor | Pagina de Receita</title>
 </head>
 <body>
   <div id="interface">
     <header>
+      <img src="assets/images/image-omelette.jpeg">
       <h1>Simple Omelette Recipe</h1>
       <p>
         An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
@@ -33,7 +35,7 @@
           <li><p>Optional fillings: cheese, diced vegetables, cooked meats, herbs</p></li>
         </ul>
       </section>
-      <section>
+      <section id="instrucao">
         <h2>Instructions</h2>
         <ol>
           <li>
@@ -73,17 +75,30 @@
       </section>
       <section>
         <h2>Nutrition</h2>
-        The table below shows nutritional values per serving without the additional fillings.
-        Calories
-        277kcal
-        Carbs
-        0g
-        Protein
-        20g
-        Fat
-        22g
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <table>
+          <tr>
+            <td>Calories</td>
+            <td class="valores">277kcal</td>
+          </tr>
+          <tr>
+            <td>Carbs</td>
+            <td class="valores">0g</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td class="valores">20g</td>
+          </tr>
+          <tr>
+            <td>Fat</td>
+            <td class="valores">22g</td>
+          </tr>
+        </table>
       </section>
     </main>
+    <footer>
+      <p>Site criado por <a href="https://github.com/kaua-aosantana" target="_blank">Kauã Alexandre de Oliveira Santana</a> para o <a href="https://www.frontendmentor.io/home" target="_blank">Frontend Mentor</a></p>
+    </footer>
   </div>
 </body>
 </html>

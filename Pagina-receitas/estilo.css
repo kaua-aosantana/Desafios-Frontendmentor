@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'outfit';
+    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'young-serif';
+    src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+}
+:root{
+    --titulo: 'young-serif';
+    --texto: 'outfit';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+}
+ol, ul{
+    color: hsl(14, 45%, 36%);
+    padding: 0 20px;
+}
+p{
+    font-family: var(--texto);
+    color: hsl(30, 10%, 34%);
+    margin: 10px 0 10px 0;
+    font-size: 1.3em;
+}
+strong{
+    color: hsl(24, 5%, 18%);
+}
+a::before{
+    content: '🔗';
+}
+div#interface{
+    min-width: 375px;
+    max-width: 800px;
+    margin: 0 auto 10px;
+    padding: 0 20px 10px;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+}
+header img{
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+}
+header > h1{
+    font-family: var(--titulo);
+    font-size: 3em;
+    font-weight: lighter;
+    margin: 20px 0px 20px 0px;
+}
+aside{
+    background-color: hsl(330, 100%, 98%);
+    margin: 20px 0;
+    padding: 30px;
+    font-family: var(--texto);
+}
+aside > h2{
+    color: hsl(332, 51%, 32%);
+}
+section{
+    margin: 20px 0;
+    padding: 30px;
+    font-family: var(--texto);
+}
+section#instrucao{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+section h2{
+    font-family: var(--titulo);
+    font-size: 2em;
+    color: hsl(14, 45%, 36%);
+    font-weight: lighter;
+    margin: 20px 0px 20px 0px;
+}
+table{
+    width: 100%;
+    font-size: 1.5em;
+    border-collapse: collapse;
+}
+table td{
+    border-bottom: 1px solid lightgray;
+    padding: 20px 10px;
+
+}
+table td.valores{
+    font-weight: bolder;
+    color: hsl(14, 45%, 36%);
+}
+footer{
+    font-size: 1em;
+    text-align: center;
+    color: hsl(24, 5%, 18%);
+}
+footer a{
+    font-size: 1em;
+    color: hsl(24, 5%, 18%);
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover{
+    text-decoration: underline;
+}
