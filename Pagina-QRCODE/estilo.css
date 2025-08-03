@@ -12,8 +12,8 @@ body{
     background-color: hsl(212, 45%, 89%);
 }
 main{
-    width: 340px;
-    height: 500px;
+    width: 380px;
+    height: 540px;
     background-color: white;
     position: absolute;
     top: 50%;
