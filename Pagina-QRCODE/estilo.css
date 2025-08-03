@@ -21,7 +21,7 @@ main{
     transform: translate(-50%, -50%);
     padding: 15px 10px;
     border-radius: 20px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 10px gray;
 }
 section#imagem{
     width: 100%;
