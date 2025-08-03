@@ -19,7 +19,7 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px 15px 25px;
+    padding: 15px 10px;
     border-radius: 20px;
 }
 section#imagem{
@@ -41,4 +41,3 @@ section#texto > h1{
     margin: 20px 2.5%;
     color: hsl(218, 44%, 22%);
 }
-/* Comentario Teste */
