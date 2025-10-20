@@ -5,10 +5,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
   <title>Frontend Mentor | Social links profile</title>
   <style>
+    @font-face {
+      font-family: "Inter-Regular";
+      src: url("assets/fonts/static/Inter-Bold.ttf");
+    }
     *{
       margin: 0;
       padding: 0;
       text-decoration: none;
+      font-family: "Inter-Regular";
+      font-size: 1em;
     }
     body{
       background-color: hsl(0, 0%, 8%);
@@ -24,14 +30,23 @@
       top: 50dvh;
       left: 50vw;
       transform: translate(-50%, -50%);
-      padding: 0 10px;
+      padding: 10px 20px;
     }
     header{
       padding: 20px 0;
     }
+    header > h1{
+      font-size: 2em;
+    }
+    header > p{
+      color: hsl(75, 94%, 57%);
+    }
     img{
       border-radius: 100%;
       height: 80px;
+    }
+    aside > q{
+      font-family: 'Times New Roman', Times, serif;
     }
     main{
       padding: 10px 0;
@@ -40,7 +55,16 @@
       background-color: hsl(0, 0%, 20%);
       margin-bottom: 10px;
       padding: 10px;
-      border-radius: 20px;
+      border-radius: 5px;
+    }
+    li:hover{
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 20%);
+      cursor: pointer;
+    }
+    footer > p{
+      font-family: 'Times New Roman', Times, serif;
+      color: hsl(0, 0%, 20%);
     }
   </style>
 </head>
@@ -50,8 +74,10 @@
       <img src="assets/images/avatar-jessica.jpeg" alt="foto perfil de Jessica" />
       <h1>Jessica Randall</h1>
       <p>London, United Kingdom</p>
-      <q>Front-end developer and avid reader.</q>
     </header>
+    <aside>
+      <q>Front-end developer and avid reader.</q>
+    </aside>
     <main>
       <ul type="none">
         <li>GitHub</li>
