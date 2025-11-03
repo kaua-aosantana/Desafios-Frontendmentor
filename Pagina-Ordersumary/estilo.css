@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main{
+    width: 20em;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1em;
+    box-shadow: 0em 0.5em 1em hsla(0, 0%, 0%, 0.3);
+}
+header > img{
+    width: 20em;
+    border-radius: 1em 1em 0 0;
+}
+div#agrupamento_secoes{
+    padding: 2em 1em;
+}
+section{
+    padding: 0.5em;
+}
+section#planos{
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    padding: 1em;
+}
