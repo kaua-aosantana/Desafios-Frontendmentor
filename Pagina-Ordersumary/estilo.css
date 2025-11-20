@@ -147,9 +147,9 @@ footer p:hover a{
         background-image: url("images/pattern-background-mobile.svg");
     }
     #interface{
-        width: 375px;
+        width: 370px;
     }
     header > img{
-        width: 375px;
+        width: 370px;
     }
 }
