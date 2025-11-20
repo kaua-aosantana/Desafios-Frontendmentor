@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+:root{
+    --cor_fundo: hsl(225, 100%, 94%);
+    --cor_cartao: white;
+    --cor_titulo: hsl(223, 47%, 23%);
+    --cor_texto: hsl(224, 23%, 55%);
+    --cor_plano: hsl(225, 100%, 98%);
+    --cor_botao_pagamento: hsl(245, 75%, 52%);
+    --cor_botao_pagamento_ativado: hsl(256, 46%, 44%);
+    --cor_botao_cancelar_ativado: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--cor_texto);
+}
+body{
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--cor_fundo);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#interface{
+    width: 22em;
+    background-color: var(--cor_cartao);
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.2);
+}
+header > img{
+    width: 22em;
+    border-radius: 0.5em 0.5em 0 0;
+}
+main{
+    padding: 2em 2em 1em;
+}
+section{
+    padding: 1em 0;
+}
+.descricao{
+    text-align: center;
+}
+.descricao > p{
+    padding: 1em 0;
+    font-size: 0.9em;
+}
+.descricao h1{
+    color: var(--cor_titulo);
+    font-size: 1.5em;
+}
+.plano{
+    position: relative;
+    background-color: var(--cor_plano);
+    border-radius: 0.3em;
+    padding: 1em;
+}
+
+.plano > button{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    margin: 0 1em;
+}
+.plano > button > a{
+    color: blue;
+}
+.descricao_plano{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 0.5em;
+}
+.plano p{
+    font-size: 0.9em;
+}
+.plano #nome_plano{
+    font-weight: bold;
+    color: var(--cor_titulo);
+}
+.botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botao button{
+    margin: 0.3em 0;
+}
+#btn_pagamento{
+    background-color: var(--cor_botao_pagamento);
+    color: white;
+    padding: 1em;
+    border-radius: 0.8em;
+    border: none;
+    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+#btn_cancelar{
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+}
+.btn:hover{
+    cursor: pointer;
+}
+#btn_pagamento:hover{
+    background-color: var(--cor_botao_pagamento_ativado);
+}
+#btn_cancelar:hover{
+    font-weight: bolder;
+    color: var(--cor_botao_cancelar_ativado);
+}
+footer{
+    height: 2em;
+}
+footer p{
+    text-align: center;
+}
+footer p a{
+    color: rgb(201, 201, 201);
+    font-family: 'Times New Roman', Times, serif;
+}
+footer p:hover::before{
+    content: '↗';
+}
+footer p:hover a{
+    cursor: pointer;
+    color: rgb(120, 120, 120);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-image: url("images/pattern-background-mobile.svg");
+    }
+    #interface{
+        width: 375px;
+    }
+    header > img{
+        width: 375px;
+    }
+}
