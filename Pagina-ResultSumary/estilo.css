@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url("assets/fonts/static/HankenGrotesk-Medium.ttf");
+}
+
+:root{
+    /* Fundo do section resultado */
+    --gradiente_resultado_um: hsl(241, 81%, 54%);
+    --gradiente_resultado_dois: hsl(252, 100%, 67%);
+
+    --gradiente_score_um: hsla(241, 72%, 46%, 0);
+    --gradiente_score_dois: hsla(256, 72%, 46%, 1);
+
+    --fundo_detalhes: white;
+    --fundo_main: white;
+    --fundo_body: hsl(221, 100%, 96%);
+
+    --cor_texto_resultado: hsl(241, 100%, 89%);
+    --cor_pontuacao_resultado: white;
+
+    --cor_botao: hsl(224, 30%, 27%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'HankenGrotesk', Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo_body);
+}
+main{
+    display: flex;
+    flex-direction: row;
+    height: 30em;
+    width: 50em;
+    background-color: white;
+    border-radius: 2em;
+}
+section{
+    width: 100%; /* As dimensoes sao ajustadas para que ocupem todo o elemento pai*/
+    border-radius: 2em;
+    padding: 1em 2em;
+
+}
+.resultado{
+    background: linear-gradient(to top, var(--gradiente_resultado_um), var(--gradiente_resultado_dois) 80%);
+    position: relative;
+    text-align: center;
+    color: var(--cor_texto_resultado);
+}
+.resultado h1{
+    padding: 1em 0;
+    font-size: 1.5em;
+
+}
+.resultado .score{
+    border-radius: 100%;
+    background: linear-gradient(to top, var(--gradiente_score_um), var(--gradiente_score_dois));
+    height: 12em;
+    width: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.resultado .score #pontuacao span{
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--cor_pontuacao_resultado)
+}
+.resultado .descricao_score{
+    padding: 2em 3.5em;
+}
+.resultado .descricao_score #status{
+    font-size: 2em;
+    padding-bottom: 0.5em;
+    color: var(--cor_pontuacao_resultado);
+}
+.detalhes{
+    background-color: var(--fundo_detalhes);
+}
+.detalhes h2{
+    padding: 1em 0;
+}
+.detalhes table{
+    height: 20em;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.detalhes table th{
+    text-align: left;
+}
+#reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+#reaction th{
+    color: hsla(0, 100%, 67%, 1);
+}
+#memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+#memory th{
+    color: hsla(39, 100%, 56%, 1);
+}
+#verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+#verbal th{
+    color: hsla(166, 100%, 37%, 1);
+}
+#visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+#visual th{
+    color: hsla(234, 85%, 45%, 1);
+}
+.detalhes button{
+    border-radius: 2em;
+    background-color: var(--cor_botao);
+    border: none;
+    padding: 1em;
+    margin: 1em 0;
+    width: 100%;
+    color: white;
+}
