@@ -49,9 +49,9 @@ main{
     display: flex;
     flex-direction: row;
     height: 75svh;
-    min-height: 40em;
+    min-height: 30em;
     width: 65svw;
-    min-width: 50em;
+    min-width: 40em;
     background-color: white;
     border-radius: 2em;
 }
