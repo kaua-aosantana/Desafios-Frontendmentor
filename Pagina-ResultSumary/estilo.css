@@ -21,6 +21,15 @@
     --cor_pontuacao_resultado: white;
 
     --cor_botao: hsl(224, 30%, 27%);
+
+    --cor_reaction_fundo: hsla(0, 100%, 67%, 0.1);
+    --cor_reaction_texto: hsla(0, 100%, 67%, 1);
+    --cor_memory_fundo: hsla(39, 100%, 56%, 0.1);
+    --cor_memory_texto: hsla(39, 100%, 56%, 1);
+    --cor_verbal_fundo: hsla(166, 100%, 37%, 0.1);
+    --cor_verbal_texto: hsla(166, 100%, 37%, 1);
+    --cor_visual_fundo: hsla(234, 85%, 45%, 0.1);
+    --cor_visual_texto: hsla(234, 85%, 45%, 1);
 }
 *{
     margin: 0;
@@ -39,8 +48,8 @@ body{
 main{
     display: flex;
     flex-direction: row;
-    height: 30em;
-    width: 50em;
+    height: 80svh;
+    width: 70svw;
     background-color: white;
     border-radius: 2em;
 }
@@ -79,49 +88,23 @@ section{
 .resultado .descricao_score{
     padding: 2em 3.5em;
 }
+.resultado .descricao_score p{
+    font-size: 1em;
+}
 .resultado .descricao_score #status{
     font-size: 2em;
     padding-bottom: 0.5em;
     color: var(--cor_pontuacao_resultado);
 }
+
+/* Parte do Section Detalhes */
+
 .detalhes{
     background-color: var(--fundo_detalhes);
+    color: hsl(224, 30%, 27%);
 }
 .detalhes h2{
     padding: 1em 0;
-}
-.detalhes table{
-    height: 20em;
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-}
-.detalhes table th{
-    text-align: left;
-}
-#reaction{
-    background-color: hsla(0, 100%, 67%, 0.1);
-}
-#reaction th{
-    color: hsla(0, 100%, 67%, 1);
-}
-#memory{
-    background-color: hsla(39, 100%, 56%, 0.1);
-}
-#memory th{
-    color: hsla(39, 100%, 56%, 1);
-}
-#verbal{
-    background-color: hsla(166, 100%, 37%, 0.1);
-}
-#verbal th{
-    color: hsla(166, 100%, 37%, 1);
-}
-#visual{
-    background-color: hsla(234, 85%, 45%, 0.1);
-}
-#visual th{
-    color: hsla(234, 85%, 45%, 1);
 }
 .detalhes button{
     border-radius: 2em;
@@ -131,4 +114,75 @@ section{
     margin: 1em 0;
     width: 100%;
     color: white;
+}
+.detalhes button:hover{
+    cursor: pointer;
+    background: linear-gradient(to top, var(--gradiente_resultado_um), var(--gradiente_resultado_dois) 80%);
+}
+
+.detalhes ul{
+    list-style: none;
+    height: 15em;
+    margin-bottom: 2em;
+}
+.detalhes ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+.detalhes ul li .nome{
+    width: 70%;
+    font-weight: bold;
+}
+.detalhes ul li .valor{
+    font-weight: bold;
+}
+.detalhes ul li .valor .por_cem{
+    color: var(--cor_texto_resultado)
+}
+#reaction{
+    background-color: var(--cor_reaction_fundo);
+}
+#reaction .nome{
+    color: var(--cor_reaction_texto);
+}
+#memory{
+    background-color: var(--cor_memory_fundo);
+}
+#memory .nome{
+    color: var(--cor_memory_texto);
+}
+#verbal{
+    background-color: var(--cor_verbal_fundo);
+}
+#verbal .nome{
+    color: var(--cor_verbal_texto);
+}
+#visual{
+    background-color: var(--cor_visual_fundo);
+}
+#visual .nome{
+    color: var(--cor_visual_texto);
+}
+
+@media screen and (max-width: 700px){
+    body{
+        align-items: flex-start;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .resultado{
+        border-radius: 0 0 2em 2em;
+    }
+    .detalhes{
+        padding: 5em;
+    }
 }
