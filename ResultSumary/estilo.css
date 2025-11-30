@@ -104,8 +104,8 @@ section{
 @media screen and (max-width: 800px) {
     main{
         flex-direction: column;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
     }
     .result{
         border-radius: 0 0 2em 2em;
@@ -114,7 +114,6 @@ section{
         border-radius: 0;
         padding: 0 2em 1em;
         display: grid;
-        height: auto;
     }
     .summary ul{
         width: 80%;
