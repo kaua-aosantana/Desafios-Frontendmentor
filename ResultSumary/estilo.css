@@ -81,6 +81,14 @@ section{
     border-radius: 1em;
     background-color: lightcyan;
 }
+.summary .pontuacao{
+    color: hsl(224, 30%, 27%);
+    font-weight: bold;
+}
+.summary .pontuacao .cem{
+    color: hsl(241, 100%, 89%);
+    font-weight: normal;
+}
 .summary button{
     width: 100%;
     padding: 1em;
@@ -88,4 +96,27 @@ section{
     border-radius: 2em;
     background-color: hsl(224, 30%, 27%);
     color: white;
+}
+.summary button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+    main{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .result{
+        border-radius: 0 0 2em 2em;
+    }
+    .summary{
+        border-radius: 0;
+        padding: 0 2em 1em;
+        display: grid;
+    }
+    .summary ul{
+        width: 80%;
+        justify-self: center;
+    }
 }
