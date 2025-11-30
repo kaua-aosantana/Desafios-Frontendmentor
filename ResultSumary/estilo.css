@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Hanken';
+    src: url("assets/fonts/static/HankenGrotesk-Medium.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken', Arial, Helvetica, sans-serif;
+    background-color: hsl(221, 100%, 96%);
+}
+main{
+    width: 40em;
+    height: 32em;
+    display: flex;
+    border-radius: 2em;
+    background-color: white;
+}
+section{
+    width: 100%;
+    border-radius: 2em;
+    padding: 1em;
+}
+.result{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    color: hsl(241, 100%, 89%);
+}
+.result .percent{
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(256, 72%, 46%, 0));
+    border-radius: 100%;
+    width: 12em;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.result h1{
+    font-size: 1.5em;
+}
+.percent span{
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+}
+.result p{
+    height: 100%;
+    padding: 0 2em;
+}
+.result p > span{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.summary{
+    color: hsl(224, 30%, 27%);
+}
+.summary h2{
+    margin: 1em 0;
+}
+.summary ul{
+    list-style-type: none;
+}
+.summary ul li{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    padding: 1em;
+    margin: 1.5em 0;
+    border-radius: 1em;
+    background-color: lightcyan;
+}
+.summary button{
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 2em;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+}
