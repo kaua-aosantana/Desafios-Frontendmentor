@@ -21,22 +21,23 @@ body{
     background-color: var(--fundo_body);
 }
 .card{
-    width: 21em;
+    width: 18em;
     height: 35em;
     padding: 1em;
     box-sizing: content-box;
     background-color: var(--fundo_card);
+    border-radius: 1em;
     container-type: size;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 60% 30% 10%;
+    grid-template-rows: 50% 40% 10%;
     color: var(--cor_texto);
 }
 main{
     padding: 1em 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 main section{
     display: flex;
@@ -44,7 +45,9 @@ main section{
     justify-content: space-between;
 }
 .card > header > img{
-    height: 100%;
+    width: 100cqw;
+    height: 50cqh;
+    border-radius: 1em;
 }
 footer{
     container-type: size;
