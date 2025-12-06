@@ -7,4 +7,5 @@ Listagem dos desafios feitos no site FrontEndMentor
 <a href="Cartaoblog/index.html" target="_blank">Página Cartão Blog</a><br>
 <a href="RedeSocial/index.html" target="_blank">Página da Rede Social</a><br>
 <a href="Ordersumary/index.html" target="_blank">Página Order Sumary</a><br>
-<a href="ResultSumary/index.html" target="_blank">Pagina de Results Sumary</a>
+<a href="ResultSumary/index.html" target="_blank">Pagina de Results Sumary</a><br>
+<a href="NFTcard/index.html" target="_blank">Pagina de NFT card</a><br>
