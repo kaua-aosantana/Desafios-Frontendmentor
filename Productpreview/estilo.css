@@ -37,12 +37,15 @@ main{
     height: 100%;
     border-radius: 1em 0 0 1em;
 }
+.imagem source{
+    height: 100%;
+}
 .conteudo{
     width: 100%;
     padding: 2em;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 5% 40% 30% 10% 15%;
+    grid-template-rows: 5% 40% 35% 10% 10%;
     align-items: center;
 }
 .conteudo > span{
@@ -88,10 +91,24 @@ main{
     cursor: pointer;
 }
 @media screen and (max-width: 500px){
+    body{
+        width: 100svw;
+        height: 100svh;
+        align-items: flex-start;
+    }
     main{
         flex-direction: column;
+        width: 100%;
+        height: 120%;
     }
-    source{
+    .imagem img{
         height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+    .conteudo{
+        padding: 1em 3em;
+        height: 100%;
+        grid-template-rows: 5% 40% 25% 15% 15%;
     }
 }
