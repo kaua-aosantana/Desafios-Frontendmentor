@@ -90,7 +90,7 @@ main{
     background-color: var(--cor_ativado);
     cursor: pointer;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     body{
         width: 100svw;
         height: 100svh;
