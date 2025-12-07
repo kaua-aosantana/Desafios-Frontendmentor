@@ -107,7 +107,7 @@ main{
         border-radius: 0;
     }
     .conteudo{
-        padding: 1em 3em;
+        padding: 1em 3em 2em;
         height: 100%;
         grid-template-rows: 5% 40% 25% 15% 15%;
     }
