@@ -23,4 +23,4 @@ Lista das paginas para dar uma espiada
 <a href="NFTcard/index.html" target="tela">NFT card</a>
 <a href="Productpreview/index.html" target="tela">Product Preview</a>
 
-<iframe name="tela" width="98%" height="600px" style="border-radius:2em;" srcdoc="<h1 style='margin:auto; font-family:Arial;'>Escolha um dos site acima</h1>"></iframe>
+<iframe name="tela" width="98%" height="600px" style="border-radius:2em;" srcdoc="<h1 style='text-align: center; font-family:Arial;'>Escolha um dos site acima</h1>"></iframe>
