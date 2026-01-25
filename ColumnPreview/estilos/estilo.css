@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca";
+}
+main{
+    width: 900px;
+    height: 500px;
+    border-radius: 1em;
+    overflow: hidden;
+    display: flex;
+}
+.cartao{
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    position: relative;
+}
+h1{
+    margin: 1em 0;
+    font-family: "Big Shoulders";
+    color: white;
+    font-size: 2.5em;
+}
+#sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+#suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+button{
+    border: 0;
+    border-radius: 2em;
+    padding: 1em 2em;
+    background-color: white;
+    position: absolute;
+    bottom: 5%;
+    mix-blend-mode: screen;
+    border: 0.2em solid white;
+    transition: background-color .5s, color 1s;
+}
+p{
+    line-height: 1.5em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+button:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        overflow: auto;
+    }
+    .cartao{
+        padding-bottom: 10em;
+    }
+}
