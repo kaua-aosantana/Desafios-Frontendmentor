@@ -48,6 +48,7 @@ section{
     background-color: var(--cor_filtro_imagem);
     border-radius: 0 1em 1em 0;
     position: absolute;
+    mix-blend-mode: multiply; /* Aplica o filtro na imagem */
     top: 0;
 }
 .texto{
