@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --cor_fundo_body: hsl(233, 47%, 7%);
+    --cor_fundo_main: hsl(244, 37%, 16%);
+    --cor_filtro_imagem: hsla(277, 64%, 61%, 0.7);
+
+    --cor_titulo: hsl(0, 0%, 100%);
+    --cor_paragrafo: hsla(0, 0%, 100%, 0.75);
+    --cor_span_destaque: hsl(0, 0%, 100%);
+
+    --fonte_titulo: "Lexend Deca";
+    --fonte_texto: "Inter";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor_fundo_body);
+}
+main{
+    width: 1080px;
+    height: 446px;
+    background-color: var(--cor_fundo_main);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row-reverse;
+}
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.imagem img{
+    border-radius: 0 1em 1em 0;
+}
+#filtro_imagem{
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor_filtro_imagem);
+    border-radius: 0 1em 1em 0;
+    position: absolute;
+    top: 0;
+}
+.texto{
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3em;
+}
+h1{
+    font-size: 2.3em;
+    color: var(--cor_titulo);
+    font-family: var(--fonte_titulo);
+}
+h1 > span{
+    color: hsl(277, 64%, 61%);
+}
+p{
+    font-family: var(--fonte_texto);
+    color: var(--cor_paragrafo);
+    line-height: 1.5em;
+}
+.texto ul{
+    color: var(--cor_paragrafo);
+    font-family: var(--fonte_texto);
+    font-variant: small-caps;
+    columns: 3;
+    list-style: none;
+}
+.texto .destaque{
+    color: var(--cor_span_destaque);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 946px){
+    body{
+        align-items: flex-start;
+    }
+    main{
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+    }
+    section{
+        width: 100%;
+        height: auto;
+    }
+    .texto{
+        padding: 2em;
+        height: auto;
+    }
+    .texto ul{
+        columns: 1;
+        align-self: center;
+        text-align: center;
+    }
+    .texto ul li{
+        margin-bottom: 1em;
+    }
+    .texto ul li{
+        font-size: 2em;
+    }
+    .texto .destaque{
+        font-size: 1.5em;
+    }
+    .imagem img{
+        width: 100%;
+        border-radius: 0;
+    }
+    .imagem #filtro_imagem{
+        border-radius: 0;
+    }
+}
