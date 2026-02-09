@@ -11,6 +11,7 @@ Listagem dos desafios feitos no site FrontEndMentor
 <a href="NFTcard/index.html" target="_blank">Pagina de NFT card</a><br>
 <a href="Productpreview/index.html" target="_blank">Product Preview</a><br>
 <a href="PreviewCard/index.html" target="_blank">Stats Product Card</a><br>
+<a href="ColumnPreview/index.html" target="_blank">Column Preview</a><br>
 
 # Visualização Rapida dos meus projetos
 Lista das paginas para dar uma espiada
@@ -24,5 +25,6 @@ Lista das paginas para dar uma espiada
 <a href="NFTcard/index.html" target="tela">NFT card</a>|
 <a href="Productpreview/index.html" target="tela">Product Preview</a>|
 <a href="PreviewCard/index.html" target="tela">Stats Product Card</a>|
+<a href="ColumnPreview/index.html" target="tela">Column Preview</a>|
 
 <iframe name="tela" width="98%" height="600px" style="border-radius:2em;" srcdoc="<h1 style='text-align: center ; font-family:Arial;'>Escolha um dos site acima</h1>"></iframe>
