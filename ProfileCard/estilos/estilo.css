@@ -17,12 +17,8 @@ body{
     align-items: center;
     font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
     color: hsl(229, 23%, 23%);
-
     background-color: hsl(185, 75%, 39%);
-    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-    background-size: 40em 40em, 40em 40em;
-    background-repeat: no-repeat, no-repeat;
-    background-position: -150px -250px, calc(100% + 200px) 350px;
+    overflow: hidden;
 }
 main{
     width: 25em;
@@ -30,6 +26,7 @@ main{
     background-color: white;
     border-radius: 1em;
     overflow: hidden;
+    z-index: 1;
 }
 section.perfil{
     height: 75%;
@@ -86,4 +83,20 @@ section.numeros .texto{
     font-weight: normal;
     font-size: 0.8em;
     color: hsl(227, 10%, 46%);
+}
+
+/* Arrumando a posicao das bolas que ficam no fundo */
+.bg{
+    width: clamp(500px, 85%, 2000px);
+    position: absolute;
+}
+#bg_top{
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+#bg_bottom{
+    bottom: 0;
+    right: 0;
+    transform: translate(50%,50%);
 }
