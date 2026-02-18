@@ -27,6 +27,6 @@ Lista das paginas para dar uma espiada
 <a href="Productpreview/index.html" target="tela">Product Preview</a>|
 <a href="PreviewCard/index.html" target="tela">Stats Product Card</a>|
 <a href="ColumnPreview/index.html" target="tela">Column Preview</a>|
-<a href="ProfileCard/index.html" target="tela">Profile Card Component</a>/
+<a href="ProfileCard/index.html" target="tela">Profile Card Component</a>|
 
 <iframe name="tela" width="98%" height="600px" style="border-radius:2em;" srcdoc="<h1 style='text-align: center ; font-family:Arial;'>Escolha um dos site acima</h1>"></iframe>
