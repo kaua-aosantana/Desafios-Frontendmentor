@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100dvw;
+    height: 100dvh;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 80em;
+    height: 40em;
+    background-color: lightblue;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.texto{
+    width: 50%;
+}
+.lista{
+    width: 50%;
+}
+
+@media screen and (max-width: 800px){
+    main{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 2em;
+    }
+    .texto, .lista, .cartoes{
+        width: 100%;
+    }
+}
