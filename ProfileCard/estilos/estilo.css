@@ -28,13 +28,13 @@ main{
     overflow: hidden;
     z-index: 1;
 }
-section.perfil{
+.perfil{
     height: 75%;
 }
-#img_fundo{
+#img-fundo{
     width: 100%;
 }
-#img_perfil{
+#img-perfil{
     display: block;
     border-radius: 50%;
     border: .5em solid white;
@@ -61,28 +61,30 @@ section.perfil{
 #endereco{
     color: hsl(227, 10%, 46%);
 }
-section.numeros{
+.numeros{
     height: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     border-top: 0.01em solid hsla(227, 10%, 46%, 0.2);
-    padding: 0 1.5em;
+    padding: 1.5em;
 }
-section.numeros div{
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
+.numeros dl{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
     text-align: center;
+    column-gap: 1.5em;
 }
-section.numeros .numero{
+.numeros .numero{
     font-weight: bold;
     font-size: 1.3em;
+    grid-row: 1;
 }
-section.numeros .texto{
+.numeros .texto{
     font-weight: normal;
     font-size: 0.8em;
     color: hsl(227, 10%, 46%);
+    grid-row: 2;
 }
 
 /* Arrumando a posicao das bolas que ficam no fundo */
@@ -90,12 +92,12 @@ section.numeros .texto{
     width: clamp(500px, 85%, 2000px);
     position: absolute;
 }
-#bg_top{
+#bg-top{
     top: 0;
     left: 0;
     transform: translate(-50%,-50%);
 }
-#bg_bottom{
+#bg-bottom{
     bottom: 0;
     right: 0;
     transform: translate(50%,50%);
