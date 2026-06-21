@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 900px;
+    height: 540px;
+    background-color: lightpink;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#titulo{
+
+}
+#lista{
+
+}
+#comentarios{
+    grid-row: span 1;
+    grid-column: span 2;
+}
